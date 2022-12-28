@@ -1,4 +1,4 @@
-import SwiftMsgpack
+import SwiftMsgpackCsm
 
 struct Coordinate: Codable {
     let latitude: Double

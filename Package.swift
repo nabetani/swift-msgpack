@@ -4,30 +4,30 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-msgpack",
+    name: "swift-msgpack-csm",
     platforms: [.macOS(.v10_15), .iOS(.v13)],
     products: [
         .library(
-            name: "SwiftMsgpack",
-            targets: ["SwiftMsgpack"]
+            name: "SwiftMsgpackCsm",
+            targets: ["SwiftMsgpackCsm"]
         ),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "SwiftMsgpack",
+            name: "SwiftMsgpackCsm",
             dependencies: []
         ),
         .executableTarget(
             name: "example",
             dependencies: [
-                "SwiftMsgpack",
+                "SwiftMsgpackCsm",
             ],
             path: "Example"
         ),
         .testTarget(
             name: "SwiftMsgpackTests",
-            dependencies: ["SwiftMsgpack"]
+            dependencies: ["SwiftMsgpackCsm"]
         ),
     ]
 )

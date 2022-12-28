@@ -1,5 +1,5 @@
 import XCTest
-@testable import SwiftMsgpack
+@testable import SwiftMsgpackCsm
 
 final class EncodeTests: XCTestCase {
     private let encoder = MsgPackEncoder()
